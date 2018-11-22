@@ -24,7 +24,7 @@ class ListOfBooks extends Component {
     }
 }
 
-function mapStatetoProps(state) {
+function mapStateToProps(state) {
     return {
         books: state.books
     }
@@ -34,5 +34,5 @@ function mapDispatchToProps(dispatch) {
    return bindActionCreators({selectedBook: selectedBook}, dispatch);
 }
 
-export default connect(mapStatetoProps,mapDispatchToProps)(ListOfBooks);
+export default connect(mapStateToProps,mapDispatchToProps)(ListOfBooks);
 
